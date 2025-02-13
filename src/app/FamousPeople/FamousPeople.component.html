@@ -1,0 +1,26 @@
+<h2>Famous People: Hall of Fame</h2>
+
+<div class="main-div">
+  <table>
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Invention</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let dev of completedDevs"
+        routerLink="./person/"
+        [state]="dev"
+      >
+        <td>{{ dev.firstName }}</td>
+        <td>{{ dev.lastName }}</td>
+        <td>{{ dev.innovation }}</td>
+        <td>{{ dev.year }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

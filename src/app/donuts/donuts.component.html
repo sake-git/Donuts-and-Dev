@@ -1,0 +1,12 @@
+<h2>Donut Menu</h2>
+<div class="main-div">
+  <div
+    *ngFor="let donut of donuts"
+    class="donut-card"
+    [routerLink]="'./donutItem' + '/' + donut.id"
+  >
+    <img [src]="donut.photo" [style]="donut.photo_attribution" />
+
+    <p>{{ donut.name }}</p>
+  </div>
+</div>

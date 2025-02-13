@@ -1,0 +1,31 @@
+.bold {
+  font-weight: bold;
+}
+
+img {
+  width: 250px;
+
+  display: block;
+  margin: auto;
+}
+.main {
+  width: 800px;
+  margin: auto;
+}
+.minor-text {
+  font-style: italic;
+  font-size: small;
+  color: blue;
+}
+
+.person {
+  width: 250px;
+  border: 2px solid rgb(188, 157, 113);
+  padding: 5px;
+  margin: 20px 50px;
+  background-color: rgb(206, 197, 184);
+  box-shadow: 5px 6px 5px rgb(206, 197, 184);
+  animation: move-donut 10s linear infinite alternate;
+}
+
+
